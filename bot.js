@@ -1,4 +1,5 @@
 // Pour lancer le projet, exécuter la commande : npm run devStart 
+// Pour déployer : https://youtu.be/qv24S2L1N0k?t=1202
 
 require("dotenv").config()
 
