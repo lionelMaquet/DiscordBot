@@ -16,5 +16,13 @@ client.on('message', msg => {
     if (msg.content === "!horror"){
         msg.reply("https://www.gamesradar.com/best-horror-movies/")
     }
+
+    else if (msg.content === "tlm"){
+        for (let i = 0; i < 5; i++){
+            msg.reply("salut")
+        }
+    }
+
+    
 })
 
