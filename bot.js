@@ -1,3 +1,5 @@
+// Pour lancer le projet, exécuter la commande : npm run devStart 
+
 require("dotenv").config()
 
 const Discord = require("discord.js")
@@ -7,10 +9,11 @@ client.on('ready', () => {
     console.log('BlezBot est prêt !!!')
 })
 
+client.login(process.env.BOT_TOKEN)
+
 client.on('message', msg => {
-    if (msg.content === "ping"){
-        msg.reply("pong")
+    if (msg.content === "!horror"){
+        msg.reply("https://www.gamesradar.com/best-horror-movies/")
     }
 })
 
-client.login(process.env.BOT_TOKEN)
