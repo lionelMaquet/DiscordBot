@@ -12,17 +12,18 @@ client.on('ready', () => {
 
 client.login(process.env.BOT_TOKEN)
 
+let count = 0; 
+
 client.on('message', msg => {
-    if (msg.content === "!horror"){
-        msg.reply("https://www.gamesradar.com/best-horror-movies/")
+    if (msg.content === "!up"){
+        count++;
+        msg.reply(`${count}`)
     }
 
-    else if (msg.content === "tlm"){
-        for (let i = 0; i < 5; i++){
-            msg.reply("salut")
-        }
+    else if (msg.content === "!down"){
+        count--;
+        msg.reply(`${count}`)
     }
-
     
 })
 
